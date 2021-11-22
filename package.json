@@ -1,0 +1,33 @@
+{
+  "name": "@arelive/logger",
+  "version": "1.0.0",
+  "description": "this is my logger, please dont touch it",
+  "main": "index.js",
+  "homepage": "https://github.com/arebaka/logger#readme",
+  "scripts": {
+    "test": ":"
+  },
+  "bugs": {
+    "url": "https://github.com/arebaka/logger/issues"
+  },
+  "author": "arelive <me@are.moe> (https://are.moe)",
+  "license": "MIT",
+  "repository": "github:arebaka/logger",
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/arelive"
+  },
+  "keywords": [
+    "logger"
+  ],
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "index.d.ts"
+  ],
+  "dependencies": {
+    "@types/node": "^16.11.9",
+    "moment": "^2.29.1"
+  }
+}
