@@ -63,7 +63,7 @@ export class Logger
         };
 
         this._formats         = {};
-        this._formats.oneline = "\x1b[1;3{color}m{type}\x1b[0;3{color}m [{date}] ({pid}:{ppid} {username}@{hostname}) \x1b[0;3m{tag}\x1b[0m - {message}";
+        this._formats.oneline = "\x1b[1;3{color}m{type}\x1b[0;3{color}m [{date}] ({username}@{hostname} {pid}:{ppid}) \x1b[0;3m{tag}\x1b[0m - {message}";
         this._formats.short   = "\x1b[1;3{color}m{type}\x1b[0;3{color}m [{date}] \x1b[0;3m{tag}\x1b[0m - {message}";
 
         this._formats.json = JSON.stringify({

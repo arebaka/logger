@@ -1,6 +1,6 @@
 {
   "name": "@arelive/logger",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "this is my logger, please dont touch it",
   "main": "index.js",
   "homepage": "https://github.com/arebaka/logger#readme",
@@ -27,7 +27,9 @@
     "index.d.ts"
   ],
   "dependencies": {
-    "@types/node": "^16.11.9",
     "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.10"
   }
 }
