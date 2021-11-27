@@ -40,18 +40,18 @@ type LoggerOptions = {
 
 export = class Logger
 {
-    private _types:{[name:string]: LogType};
-    private _formats:{[name:string]: string};
-    private _outputs:{[name:string]: WriteStream};
+    public _types:{[name:string]: LogType};
+    public _formats:{[name:string]: string};
+    public _outputs:{[name:string]: WriteStream};
 
-    private _format:string;
-    private _dateFormat:string;
-    private _end:string;
-    private _color:boolean;
-    private _level:number;
-    private _ignoreAll:boolean;
-    private _ignoreTags:Set<string>;
-    private _acceptTags:Set<string>;
+    public _format:string;
+    public _dateFormat:string;
+    public _end:string;
+    public _color:boolean;
+    public _level:number;
+    public _ignoreAll:boolean;
+    public _ignoreTags:Set<string>;
+    public _acceptTags:Set<string>;
 
     constructor(options:LoggerOptions={}) {
         this._types = {
