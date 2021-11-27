@@ -38,7 +38,7 @@ type LoggerOptions = {
     acceptTags?:string[]
 };
 
-export class Logger
+export = class Logger
 {
     private _types:{[name:string]: LogType};
     private _formats:{[name:string]: string};
