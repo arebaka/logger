@@ -40,18 +40,18 @@ type LoggerOptions = {
 
 export = class Logger
 {
-    public _types:{[name:string]: LogType};
-    public _formats:{[name:string]: string};
-    public _outputs:{[name:string]: WriteStream};
+    private _types:{[name:string]: LogType};
+    private _formats:{[name:string]: string};
+    private _outputs:{[name:string]: WriteStream};
 
-    public _format:string;
-    public _dateFormat:string;
-    public _end:string;
-    public _color:boolean;
-    public _level:number;
-    public _ignoreAll:boolean;
-    public _ignoreTags:Set<string>;
-    public _acceptTags:Set<string>;
+    private _format:string;
+    private _dateFormat:string;
+    private _end:string;
+    private _color:boolean;
+    private _level:number;
+    private _ignoreAll:boolean;
+    private _ignoreTags:Set<string>;
+    private _acceptTags:Set<string>;
 
     constructor(options:LoggerOptions={}) {
         this._types = {
@@ -117,15 +117,15 @@ export = class Logger
         this._level = value;
     }
 
-    setFormat(name:string, format:string) : void {
+    public setFormat(name:string, format:string) : void {
         this._formats[name] = format;
     }
 
-    setOutput(name:string, stream:WriteStream) : void {
+    public setOutput(name:string, stream:WriteStream) : void {
         this._outputs[name] = stream;
     }
 
-    setType(name:string, level:number, output:WriteStream=process.stderr, color:string) : void {
+    public setType(name:string, level:number, output:WriteStream=process.stderr, color:string) : void {
         this._types[name] = new LogType(level, output, color);
     }
 
