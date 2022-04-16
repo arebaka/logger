@@ -1,0 +1,7 @@
+#folders
+src
+.git
+.github
+
+#files
+.gitignore
