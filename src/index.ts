@@ -188,13 +188,13 @@ export class Logger {
     }
 
     public onTags(tags:string[]) : void {
-        for (let tag of tags) {
+        for (const tag of tags) {
             this.onTag(tag)
         }
     }
 
     public offTags(tags:string[]) : void {
-        for(let tag of tags) {
+        for(const tag of tags) {
             this.offTag(tag)
         }
     }
